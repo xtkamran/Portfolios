@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Kamran | Software Developer Portfolio</title>
     <!-- Premium Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,10 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-logo">KAMRAN</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="navicon"></span>
+        </label>
         <ul class="nav-list">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -255,5 +259,13 @@
             <p>&copy; 2026 Kamran. All Rights Reserved. Crafted with passion.</p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                const toggle = document.getElementById('menu-toggle');
+                if (toggle) toggle.checked = false;
+            });
+        });
+    </script>
 </body>
 </html>

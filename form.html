@@ -14,6 +14,10 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-logo"><a href="index.html" style="text-decoration: none; color: inherit; margin: 0; padding: 0; float: none;">KAMRAN</a></div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="navicon"></span>
+        </label>
         <ul class="nav-list">
             <li><a href="index.html#about-me">About Me</a></li>
             <li><a href="index.html#skills">Skills</a></li>
@@ -96,5 +100,13 @@
             <p>&copy; 2026 Kamran. All Rights Reserved. Crafted with passion.</p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                const toggle = document.getElementById('menu-toggle');
+                if (toggle) toggle.checked = false;
+            });
+        });
+    </script>
 </body>
 </html>
