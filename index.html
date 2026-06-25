@@ -3,41 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-90</title>
+    <title>Kamran | Software Developer Portfolio</title>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="navbar-name">UMAR</div>
+        <div class="navbar-logo">KAMRAN</div>
         <ul class="nav-list">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Work</a></li>
+            <li><a href="#contact" class="nav-contact-btn">Contact</a></li>
         </ul>
-        
     </nav>
-    <div class="container">
-    
-        <div class="left-column">
-            <h1>Hi, </h1>
-            <h1>I'm <span> Umar, </span></h1>
-            <h1>Web Designer</h1>
-            <div>
-                <a href="html">HTML</a>
-                <a href="html">CSS</a>
-                <a href="html">JAVASCRIPT</a>
+
+    <!-- Hero / Header Section -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Available for Freelance & Projects</span>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Kamran</span></h1>
+                <h2 class="hero-role">Software Developer</h2>
+                
+                <div class="hero-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">mongoDB</span>
+                </div>
+                
+                <p class="hero-description">
+                    I am a professional Software Developer specializing in designing and developing modern, responsive websites. I love learning new technologies and creating high-performance web experiences.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#work" class="btn btn-secondary">View My Work</a>
+                </div>
             </div>
-            <p style="color: whitesmoke; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;     font-size: 25px;
-            padding-top: 67px;" >Let me tell you a bit about myself. I am passionate about web design and I love learning new things every day. My goal is to become a successful web designer and to create unique and eye-catching websites for my clients.</p>
             
-            <button class="btn"><a href="form.html">Contact Me</a></button>
+            <div class="hero-image-container">
+                <div class="image-gradient-backdrop"></div>
+                <img src="kamran.jpeg" alt="kamran Profile Picture" class="hero-profile-img">
+            </div>
         </div>
+    </header>
 
-
-        <div class="right-column">
-            <img src="Umar.jpg
-            " alt="My Picture">
+    <!-- About Me Section -->
+    <section id="about-me" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Biography</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content-wrapper">
+                <div class="about-text-card">
+                    <p>I am a professional Software Developer based in India, dedicated to designing and developing interactive web applications. I believe that good software is not only functional and clean but also visually engaging. My work revolves around writing clean semantic code, crafting responsive layouts, and building seamless digital experiences.</p>
+                    <p>I focus on both front-end and back-end integration, performance optimization, and clean architecture. Whether building custom web designs or scaling applications, I strive for precision and functional excellence in every project.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Dedication</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">Pixel</span>
+                            <span class="stat-label">Perfect Designs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Expertise</span>
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill 1: HTML & CSS -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3>HTML & CSS</h3>
+                    <p>Building semantic web structures and styling beautiful, fully responsive layouts using modern features like Flexbox, CSS Grid, and variables.</p>
+                </div>
+                <!-- Skill 2: JavaScript -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                        </svg>
+                    </div>
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Writing clean, asynchronous logic, interactive DOM manipulations, and handling dynamic client-side application behaviors.</p>
+                </div>
+                <!-- Skill 3: React.js -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(30 12 12)" />
+                            <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(90 12 12)" />
+                            <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(150 12 12)" />
+                            <circle cx="12" cy="12" r="2" />
+                        </svg>
+                    </div>
+                    <h3>React.js</h3>
+                    <p>Developing modular, component-driven user interfaces, managing application states, and optimizing render performance.</p>
+                </div>
+                <!-- Skill 4: Node.js -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                            <line x1="6" y1="6" x2="6.01" y2="6" />
+                            <line x1="6" y1="18" x2="6.01" y2="18" />
+                        </svg>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Creating scalable backend services, designing RESTful APIs, and implementing robust server-side business logic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work / Portfolio Section -->
+    <section id="work" class="work-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="work-grid">
+                <!-- Project 1 -->
+                <article class="work-card">
+                    <div class="work-img-container">
+                        <img src="4.jpeg" alt="Responsive Dashboard Project" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <span class="work-tag">UI/UX Showcase</span>
+                        <h3 class="work-card-title">Modern Web Dashboard</h3>
+                        <p class="work-card-text">A pixel-perfect dark mode visualization dashboard featuring sleek layout cards, analytics displays, and user management interfaces.</p>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="work-card">
+                    <div class="work-img-container">
+                        <img src="logo1.png" alt="Brand Identity & Web Concept Project" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <span class="work-tag">Brand Identity</span>
+                        <h3 class="work-card-title">Digital Product Branding</h3>
+                        <p class="work-card-text">A minimal and clean branding identity concept. Designed to emphasize modern typography, consistent color theory, and digital elegance.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-card">
+                    <h3>Let's create something together!</h3>
+                    <p>Have an exciting project idea, a position to fill, or just want to say hi? Feel free to drop a message. I'm always open to discussing new opportunities, design trends, or cool creative collaborations.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <div>
+                                <h4>Email Me</h4>
+                                <p><a href="mailto:kamran@example.com">kamran@example.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <div>
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or ideas..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Kamran. All Rights Reserved. Crafted with passion.</p>
+        </div>
+    </footer>
 </body>
 </html>
